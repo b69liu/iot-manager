@@ -8,3 +8,6 @@ In current state, only the user is stored in MongoDB, as the other information c
 
 ## API Docs
 Please refer the postman josn file under frontend folder.
+
+## Essential Part
+This is jsut a small expressjs backend project. To save your time, if you only want to learn about hyperledger fabric, just refer the /services folder, which includes all interactions to the blockchain. I copied part of the code from the official fabcar example and simplified them. Also I left their part commented out, for you to compare.
