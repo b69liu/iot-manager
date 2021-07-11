@@ -1,0 +1,299 @@
+{
+	"id": "a1c999d6-2309-5a25-5183-708e29657fff",
+	"name": "iotRegistryApi",
+	"description": "Requests to call the iotRegistry backend endpoints",
+	"order": [
+		"11e9420b-7d9f-8e90-9458-1120224094e7",
+		"3abca974-1376-42a7-32e7-dd0815bafd39",
+		"6165fe54-4657-2e4a-9c24-de96b0b3aa86",
+		"d5727f65-3ab4-ccf8-1d18-a4504dd47b99",
+		"4f1002fe-6601-19a1-93a7-730d5b917088",
+		"fb61df39-b988-98d9-faf9-ca190b3cbd95",
+		"2d01d2cd-24b6-ea4b-0989-820505b73749",
+		"a889ccf8-cb4c-7b75-7379-a291af612cd2"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1625950080847,
+	"owner": "11618326",
+	"public": false,
+	"requests": [
+		{
+			"id": "11e9420b-7d9f-8e90-9458-1120224094e7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://34.95.61.236:8080/test",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625950683318,
+			"name": "test connection",
+			"description": "ping the connection",
+			"collectionId": "a1c999d6-2309-5a25-5183-708e29657fff",
+			"responses": [],
+			"rawModeData": "{\"username\": \"user1\", \"password\":\"user1password\"}"
+		},
+		{
+			"id": "2d01d2cd-24b6-ea4b-0989-820505b73749",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjI1OTY2NjUxLCJleHAiOjE2Mjg1NTg2NTF9.5CHyGbXuJwvQby_WmrE1eo_OxVv5U08Co6gke4uvTCk\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjI1OTY2NjUxLCJleHAiOjE2Mjg1NTg2NTF9.5CHyGbXuJwvQby_WmrE1eo_OxVv5U08Co6gke4uvTCk",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://34.95.61.236:8080/private/setControllerForDevice",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625967092597,
+			"name": "set controller",
+			"description": "update device's controller. Only by admin",
+			"collectionId": "a1c999d6-2309-5a25-5183-708e29657fff",
+			"responses": [],
+			"rawModeData": "{\"iotId\": \"2\", \"controllerId\":\"1\"}"
+		},
+		{
+			"id": "3abca974-1376-42a7-32e7-dd0815bafd39",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://34.95.61.236:8080/sign_in",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625966653556,
+			"name": "user login",
+			"description": "login with username and password",
+			"collectionId": "a1c999d6-2309-5a25-5183-708e29657fff",
+			"responses": [],
+			"rawModeData": "{\"username\": \"admin\", \"password\":\"adminpw\"}"
+		},
+		{
+			"id": "4f1002fe-6601-19a1-93a7-730d5b917088",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjI1OTY2NjUxLCJleHAiOjE2Mjg1NTg2NTF9.5CHyGbXuJwvQby_WmrE1eo_OxVv5U08Co6gke4uvTCk\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjI1OTY2NjUxLCJleHAiOjE2Mjg1NTg2NTF9.5CHyGbXuJwvQby_WmrE1eo_OxVv5U08Co6gke4uvTCk",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://34.95.61.236:8080/private/getAllDeviceInfo",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625966766684,
+			"name": "get all device info",
+			"description": "used to get a list of registered devices",
+			"collectionId": "a1c999d6-2309-5a25-5183-708e29657fff",
+			"responses": [],
+			"rawModeData": "{\"username\": \"user2\", \"password\":\"user2password\"}"
+		},
+		{
+			"id": "6165fe54-4657-2e4a-9c24-de96b0b3aa86",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjI1OTY2NjUxLCJleHAiOjE2Mjg1NTg2NTF9.5CHyGbXuJwvQby_WmrE1eo_OxVv5U08Co6gke4uvTCk\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjI1OTY2NjUxLCJleHAiOjE2Mjg1NTg2NTF9.5CHyGbXuJwvQby_WmrE1eo_OxVv5U08Co6gke4uvTCk",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://34.95.61.236:8080/private/sign_up",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625966742779,
+			"name": "register user",
+			"description": "register the fisrt user, and may need to change it to admin by hand",
+			"collectionId": "a1c999d6-2309-5a25-5183-708e29657fff",
+			"responses": [],
+			"rawModeData": "{\"username\": \"user2\", \"password\":\"user2password\", \"userId\":\"2\"}"
+		},
+		{
+			"id": "a889ccf8-cb4c-7b75-7379-a291af612cd2",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjI1OTY2NjUxLCJleHAiOjE2Mjg1NTg2NTF9.5CHyGbXuJwvQby_WmrE1eo_OxVv5U08Co6gke4uvTCk\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjI1OTY2NjUxLCJleHAiOjE2Mjg1NTg2NTF9.5CHyGbXuJwvQby_WmrE1eo_OxVv5U08Co6gke4uvTCk",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://34.95.61.236:8080/private/sendCommandToDevice",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625971501934,
+			"name": "send command",
+			"description": "send command to the blockchian, only by correct device controller",
+			"collectionId": "a1c999d6-2309-5a25-5183-708e29657fff",
+			"responses": [],
+			"rawModeData": "{\"iotId\": \"2\", \"command\":\"hello Caleb\"}"
+		},
+		{
+			"id": "d5727f65-3ab4-ccf8-1d18-a4504dd47b99",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjI1OTY2NjUxLCJleHAiOjE2Mjg1NTg2NTF9.5CHyGbXuJwvQby_WmrE1eo_OxVv5U08Co6gke4uvTCk\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjI1OTY2NjUxLCJleHAiOjE2Mjg1NTg2NTF9.5CHyGbXuJwvQby_WmrE1eo_OxVv5U08Co6gke4uvTCk",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://34.95.61.236:8080/private/getDeviceInfo?iotId=2",
+			"queryParams": [
+				{
+					"key": "iotId",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625966755305,
+			"name": "get device info",
+			"description": "used to get a registered devices by iotId",
+			"collectionId": "a1c999d6-2309-5a25-5183-708e29657fff",
+			"responses": [],
+			"rawModeData": "{\"username\": \"user2\", \"password\":\"user2password\"}"
+		},
+		{
+			"id": "fb61df39-b988-98d9-faf9-ca190b3cbd95",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjI1OTY2NjUxLCJleHAiOjE2Mjg1NTg2NTF9.5CHyGbXuJwvQby_WmrE1eo_OxVv5U08Co6gke4uvTCk\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjI1OTY2NjUxLCJleHAiOjE2Mjg1NTg2NTF9.5CHyGbXuJwvQby_WmrE1eo_OxVv5U08Co6gke4uvTCk",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://34.95.61.236:8080/private/registerDevice",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625966776948,
+			"name": "register device",
+			"description": "used to register a new device",
+			"collectionId": "a1c999d6-2309-5a25-5183-708e29657fff",
+			"responses": [],
+			"rawModeData": "{\"iotId\": \"3\", \"iotName\":\"MachineA\"}"
+		}
+	]
+}

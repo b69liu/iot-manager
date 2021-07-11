@@ -1,0 +1,44 @@
+[
+    {
+        "transactionName": "ioTRegistryExists",
+        "transactionLabel": "A test ioTRegistryExists transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "createIoTRegistry",
+        "transactionLabel": "A test createIoTRegistry transaction",
+        "arguments": [
+            "001",
+            "some value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "readIoTRegistry",
+        "transactionLabel": "A test readIoTRegistry transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "updateIoTRegistry",
+        "transactionLabel": "A test updateIoTRegistry transaction",
+        "arguments": [
+            "001",
+            "some other value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "deleteIoTRegistry",
+        "transactionLabel": "A test deleteIoTRegistry transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    }
+]
