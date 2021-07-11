@@ -13,7 +13,7 @@ Currently it is still a MVP, including only one orgnization, but it has the prot
 
 ![architecturefuture](./architecturefuture.png)
 
-We could also split the command event listener from the main api server, and set the security group rules to block all outter requests, and use synchronous encryption between securied woker and the IoT devices.
+We could also split the command event listener from the main api server, and set the security group rules to block all outter requests, and use synchronous encryption between secured woker and the IoT devices.
 ![firewall](./firewall.png)
 
 
