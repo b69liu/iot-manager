@@ -13,6 +13,11 @@ Currently it is still a MVP, including only one orgnization, but it has the prot
 
 ![architecturefuture](./architecturefuture.png)
 
+We could also split the command event listener from the main api server, and set the security group rules to block all outter requests, and use synchronous encryption between securied woker and the IoT devices.
+![firewall](./firewall.png)
+
+
+
 ## Instruction
 1. Install the hyperledger fabric. [Tutorial](https://hyperledger-fabric.readthedocs.io/en/release-2.2/getting_started.html). I have copied most used scripts to ./myscript.sh
 2. Run the admin scripts to register admin and generate user wallets.
