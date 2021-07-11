@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require('cors');
-const path = require("path");
+// const path = require("path");
 const mongoose = require("mongoose");
 const {signIn, signUp} = require("./controllers/user");
 const {
@@ -18,9 +18,9 @@ const {auth} = require("./services/auth");
 // const connectionString =
 // "mongodb+srv://calebliu543:678liucaleb@cluster0.i2z66.mongodb.net/musicapp?retryWrites=true&w=majority";
 const connectionString ="mongodb://appUser:user009@localhost:27017/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false";
-// const clusterWorkerSize = os.cpus().length;
-// There is no need to use multicores for this assignment submission
-const clusterWorkerSize = 1;
+// // const clusterWorkerSize = os.cpus().length;
+// // There is no need to use multicores for this demo
+// const clusterWorkerSize = 1;
 
 
 // wrapped server start code

@@ -1,8 +1,8 @@
 var jwt = require('jsonwebtoken');
 var bcrypt = require("bcryptjs");
 
-// const SECRET = process.env.SECRET || require('crypto').randomBytes(64).toString('hex');
-const SECRET = "PLEASE USE PREVIOUS LINE IN PRODUCTION ENV";
+const SECRET = process.env.SECRET || require('crypto').randomBytes(64).toString('hex');
+// const SECRET = "PLEASE USE PREVIOUS LINE IN PRODUCTION ENV";
 
 
 function signToken(userId, role){
